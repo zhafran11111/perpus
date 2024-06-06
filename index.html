@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #B48E5E;
+    color: #5b402d;
+}
+
+header {
+    background-color: #F3DEBA;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5b402d;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    position: absolute; /* Change this line */
+    right: 20px; /* Change this line */
+    top: 10px; /* Change this line */
+    display: flex;
+}
+
+.auth-buttons button {
+    
+    color: #060606;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 800;
+
+}
+
+.auth-buttons .signup {
+    background-color: #f4b76e;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero {
+    background-color: #b68d5c;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 800; /* Extra bold */
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #B48E5E;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.books img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Library Online</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html">
+                    <button class="login">Log In</button>
+                </a>
+
+                <a href="signup.html">
+                    <button class="signup">Sign Up</button>
+                </a>
+                
+                
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                
+
+            
+
+                <h1>Book</h1>
+                <h1>lead to the future</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum lacinia quis vel eros donec ac odio.</p>
+                <button class="cta-button">Get started for free</button>
+            </div>
+            <div class="books">
+                <img src="dune.jpg" alt="Dune">
+                <img src="harrypotter.jpg" alt="Harry Potter">
+                <img src="darkspring.jpg" alt="The Dark Spring">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
